@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Example</title>
-    <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
+    <link href="../static/css/bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet" media="screen"
+            th:href="@{/css/bootstrap-3.3.4-dist/css/bootstrap.min.css}"/>
 
-    <script src="http://cdn.jsdelivr.net/webjars/jquery/2.1.4/jquery.min.js"></script>
-    <style>
+    <script src="../static/js/jquery-2.1.4.min.js"
+            th:src="@{/js/jquery-2.1.4.min.js}"></script>
+    <link th:href="@{/css/custom.css}" rel="stylesheet" media="screen"/>
+    <style th:remove="all">
         .jumbotron {
-            background: url('./images/jumbo_tron_background.jpg') no-repeat center center;
+            background: url('../static/images/SpringCoreJumbotron.jpg') no-repeat center center;
             height: 350px;
             color: white;
             text-shadow: #444 0 1px 1px;
@@ -150,7 +153,8 @@
                                 <!-- 506x290 -->
                                 <img role="presentation"
                                      src="./images/scgeIJ9wRGGNWvK0jAld_ThumbFREE_01.png"
-                                     class="course-box-image">
+                                     class="course-box-image"
+                                     th:src="@{/images/SpringIntroThumb.png}">
                             </div>
                             <div class="course-listing-title">
                                 Introduction to Spring
@@ -166,7 +170,8 @@
                         <img align="left" alt="John Thompson"
                              width="100"
                              src="./images/john_thompson_image.png"
-                             class="img-circle">
+                             class="img-circle"
+                             th:src="@{/images/instructor_jt.jpg}">
                         <div class="small course-author-name">
                             John Thompson
                         </div>
@@ -187,7 +192,8 @@
                             <div class="course-box-image-container">
                                 <img role="presentation"
                                      src="./images/YnsFJMclS5aYmtiAMSX0_ThumbSPRINcore.png"
-                                     class="course-box-image">
+                                     class="course-box-image"
+                                     th:src="@{/images/SpringCoreThumb.png}">
                             </div>
                             <div class="course-listing-title">
                                 Spring Core
@@ -203,7 +209,8 @@
                         <img align="left" alt="John Thompson"
                              width="100"
                              src="./images/john_thompson_image.png"
-                             class="img-circle">
+                             class="img-circle"
+                            th:src="@{/images/instructor_jt.jpg}">
                         <div class="small course-author-name">
                             John Thompson
                         </div>
@@ -224,7 +231,8 @@
                             <div class="course-box-image-container">
                                 <img role="presentation"
                                      src="./images/spring_core_advanced.jpg"
-                                     class="course-box-image">
+                                     class="course-box-image"
+                                    th:src="@{/images/SpringCoreAdvancedThumb.png}">
                             </div>
                             <div class="course-listing-title">
                                 Spring Core Advanced
@@ -240,7 +248,8 @@
                         <img align="left" alt="John Thompson"
                              width="100"
                              src="./images/john_thompson_image.png"
-                             class="img-circle">
+                             class="img-circle"
+                             th:src="@{/images/instructor_jt.jpg}">
                         <div class="small course-author-name">
                             John Thompson
                         </div>
@@ -264,7 +273,8 @@
                             <div class="course-box-image-container">
                                 <img role="presentation"
                                      src="./images/spring_core_dev_ops.jpg"
-                                     class="course-box-image">
+                                     class="course-box-image"
+                                     th:src="@{/images/SpringCoreDevOpsThumb.png}">
                             </div>
                             <div class="course-listing-title">
                                 Spring Core Dev Ops
@@ -280,7 +290,8 @@
                         <img align="left" alt="John Thompson"
                              width="100"
                              src="./images/john_thompson_image.png"
-                             class="img-circle">
+                             class="img-circle"
+                             th:src="@{/images/instructor_jt.jpg}">
                         <div class="small course-author-name">
                             John Thompson
                         </div>
@@ -302,7 +313,8 @@
                             <div class="course-box-image-container">
                                 <img role="presentation"
                                      src="./images/spring_code_ultimate.jpg"
-                                     class="course-box-image">
+                                     class="course-box-image"
+                                     th:src="@{/images/SpringCoreUltimateThumb.png}">
                             </div>
                             <div class="course-listing-title">
                                 Spring Core Ultimate
@@ -335,7 +347,8 @@
                             <div class="course-box-image-container">
                                 <img role="presentation"
                                      src="./images/thymeleaf.png"
-                                     class="course-box-image">
+                                     class="course-box-image"
+                                    th:src="@{/images/ThymeleafThumb.png}">
                             </div>
                             <div class="course-listing-title">
                                 Thymeleaf
@@ -351,7 +364,8 @@
                         <img align="left" alt="John Thompson"
                              width="100"
                              src="./images/john_thompson_image.png"
-                             class="img-circle">
+                             class="img-circle"
+                            th:src="@{/images/instructor_jt.jpg}">
                         <div class="small course-author-name">
                             John Thompson
                         </div>
